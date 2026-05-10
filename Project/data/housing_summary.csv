@@ -1,0 +1,164 @@
+Borough,Property_Type,Average_Price,Median_Price,Transaction_Count
+Barking and Dagenham,Detached,481095,505050,11
+Barking and Dagenham,Flat,234113,235000,286
+Barking and Dagenham,Other,933079,425000,19
+Barking and Dagenham,Semi-Detached,427006,415000,125
+Barking and Dagenham,Terraced,400778,390000,823
+Barnet,Detached,1611444,1230000,233
+Barnet,Flat,422349,390000,1563
+Barnet,Other,1678117,495229,80
+Barnet,Semi-Detached,895804,789950,770
+Barnet,Terraced,672468,630000,575
+Bexley,Detached,760679,650000,138
+Bexley,Flat,254026,260000,537
+Bexley,Other,2460027,418000,42
+Bexley,Semi-Detached,511414,499000,933
+Bexley,Terraced,416623,410000,779
+Brent,Detached,1176205,865000,66
+Brent,Flat,445607,415000,1082
+Brent,Other,746099,582500,56
+Brent,Semi-Detached,735523,650000,334
+Brent,Terraced,823373,620000,349
+Bromley,Detached,1003966,870000,519
+Bromley,Flat,347889,330500,1200
+Bromley,Other,1145060,425000,78
+Bromley,Semi-Detached,653915,625000,1050
+Bromley,Terraced,537817,512750,910
+Camden,Detached,7465180,3800000,35
+Camden,Flat,773065,645000,1248
+Camden,Other,3377676,1030000,90
+Camden,Semi-Detached,3472333,2600000,46
+Camden,Terraced,1969694,1650000,163
+City of London,Flat,854380,715000,132
+City of London,Other,16191973,4260000,16
+City of London,Terraced,2128500,2128500,1
+Croydon,Detached,759401,717000,379
+Croydon,Flat,281870,275000,1225
+Croydon,Other,1398024,390500,127
+Croydon,Semi-Detached,548350,535000,727
+Croydon,Terraced,438276,425000,1207
+Ealing,Detached,1634084,1300000,78
+Ealing,Flat,425346,400000,1134
+Ealing,Other,1421330,480000,68
+Ealing,Semi-Detached,819603,665000,393
+Ealing,Terraced,715402,610000,803
+Enfield,Detached,1108261,942500,106
+Enfield,Flat,329665,310000,804
+Enfield,Other,636604,340000,53
+Enfield,Semi-Detached,696905,650000,482
+Enfield,Terraced,518705,480000,985
+Greenwich,Detached,874369,665000,65
+Greenwich,Flat,407093,395000,1181
+Greenwich,Other,1490254,362500,46
+Greenwich,Semi-Detached,633396,590000,306
+Greenwich,Terraced,554998,479000,821
+Hackney,Detached,1668400,1580000,5
+Hackney,Flat,558156,515000,1547
+Hackney,Other,1383080,590000,73
+Hackney,Semi-Detached,1585781,1475000,28
+Hackney,Terraced,1126095,1065000,314
+Hammersmith and Fulham,Detached,2366111,2340000,9
+Hammersmith and Fulham,Flat,665204,575000,1196
+Hammersmith and Fulham,Other,1608104,640000,63
+Hammersmith and Fulham,Semi-Detached,1995923,1790000,26
+Hammersmith and Fulham,Terraced,1548551,1350000,429
+Haringey,Detached,2357252,2300000,20
+Haringey,Flat,484993,452500,1175
+Haringey,Other,1789129,450000,54
+Haringey,Semi-Detached,1285106,1175000,105
+Haringey,Terraced,852448,700000,760
+Harrow,Detached,1028624,925000,132
+Harrow,Flat,345432,340000,580
+Harrow,Other,571306,460000,45
+Harrow,Semi-Detached,655760,630000,515
+Harrow,Terraced,554547,535000,365
+Havering,Detached,731286,675000,263
+Havering,Flat,256895,260000,533
+Havering,Other,1089567,380000,46
+Havering,Semi-Detached,535850,510000,1011
+Havering,Terraced,444667,435000,889
+Hillingdon,Detached,863331,800000,265
+Hillingdon,Flat,318774,300000,662
+Hillingdon,Other,1923649,595000,67
+Hillingdon,Semi-Detached,581444,555000,731
+Hillingdon,Terraced,505050,500000,594
+Hounslow,Detached,1308938,755000,57
+Hounslow,Flat,371214,330000,741
+Hounslow,Other,1993260,575000,39
+Hounslow,Semi-Detached,749128,565000,437
+Hounslow,Terraced,662029,529000,511
+Islington,Detached,2138333,2200000,6
+Islington,Flat,628077,570000,1265
+Islington,Other,2716924,920000,67
+Islington,Semi-Detached,1842769,1650000,32
+Islington,Terraced,1495048,1375000,244
+Kensington and Chelsea,Detached,13447646,6150000,9
+Kensington and Chelsea,Flat,1183570,840000,1002
+Kensington and Chelsea,Other,4975552,630000,76
+Kensington and Chelsea,Semi-Detached,7687083,4450000,18
+Kensington and Chelsea,Terraced,3490263,2842500,222
+Kingston upon Thames,Detached,1127499,1000000,152
+Kingston upon Thames,Flat,394135,380000,634
+Kingston upon Thames,Other,1950977,805000,49
+Kingston upon Thames,Semi-Detached,774474,735000,460
+Kingston upon Thames,Terraced,612737,568000,383
+Lambeth,Detached,1397842,1140000,19
+Lambeth,Flat,491603,450000,2167
+Lambeth,Other,957210,525000,72
+Lambeth,Semi-Detached,1097226,900000,149
+Lambeth,Terraced,917082,820000,646
+Lewisham,Detached,1165409,855000,46
+Lewisham,Flat,385924,375000,1431
+Lewisham,Other,1327561,415000,72
+Lewisham,Semi-Detached,776807,700000,221
+Lewisham,Terraced,660193,635000,929
+Merton,Detached,3147772,2075000,58
+Merton,Flat,427838,390000,805
+Merton,Other,2197409,555307,60
+Merton,Semi-Detached,1059367,825000,228
+Merton,Terraced,706460,615000,855
+Newham,Detached,485000,475000,6
+Newham,Flat,421832,410000,1033
+Newham,Other,1310009,785985,47
+Newham,Semi-Detached,526388,480000,40
+Newham,Terraced,485246,465000,806
+Redbridge,Detached,1049303,870000,90
+Redbridge,Flat,318180,300000,614
+Redbridge,Other,828554,455000,51
+Redbridge,Semi-Detached,693658,642000,362
+Redbridge,Terraced,566135,530000,923
+Richmond upon Thames,Detached,1985932,1700000,120
+Richmond upon Thames,Flat,523817,460000,874
+Richmond upon Thames,Other,897436,450000,58
+Richmond upon Thames,Semi-Detached,1238086,999500,394
+Richmond upon Thames,Terraced,940831,850000,707
+Southwark,Detached,1602565,1100000,22
+Southwark,Flat,503192,450000,1816
+Southwark,Other,2702975,825000,71
+Southwark,Semi-Detached,1253185,1104000,112
+Southwark,Terraced,944492,860000,495
+Sutton,Detached,931338,865000,152
+Sutton,Flat,285117,285000,703
+Sutton,Other,857045,377500,27
+Sutton,Semi-Detached,621376,607000,463
+Sutton,Terraced,487259,470000,621
+Tower Hamlets,Detached,930000,930000,1
+Tower Hamlets,Flat,527516,455000,1980
+Tower Hamlets,Other,1819992,670000,66
+Tower Hamlets,Semi-Detached,830429,760000,7
+Tower Hamlets,Terraced,858494,830000,203
+Waltham Forest,Detached,902923,747500,26
+Waltham Forest,Flat,395432,390000,1064
+Waltham Forest,Other,936607,515000,51
+Waltham Forest,Semi-Detached,709338,665000,250
+Waltham Forest,Terraced,665113,650000,1130
+Wandsworth,Detached,3115375,2827500,39
+Wandsworth,Flat,590365,515000,2595
+Wandsworth,Other,3115328,600000,91
+Wandsworth,Semi-Detached,1688072,1500000,114
+Wandsworth,Terraced,1110766,990000,992
+Westminster,Detached,5072812,5950000,8
+Westminster,Flat,1166682,735000,1491
+Westminster,Other,11801911,2150000,182
+Westminster,Semi-Detached,5943438,5600000,16
+Westminster,Terraced,3073707,2115000,180

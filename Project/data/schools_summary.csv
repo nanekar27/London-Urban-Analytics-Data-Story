@@ -1,0 +1,167 @@
+Borough,Phase,Total_Schools,Total_Capacity,Total_Pupils,Avg_FSM_Percent
+Barking and Dagenham,16 plus,1,0,0,0
+Barking and Dagenham,All-through,5,11544,10137,30.8
+Barking and Dagenham,Not applicable,10,700,883,53.8
+Barking and Dagenham,Primary,44,28539,24056,25.0
+Barking and Dagenham,Secondary,8,12652,11210,33.5
+Barnet,16 plus,3,1700,0,0
+Barnet,All-through,3,5250,3375,29.4
+Barnet,Not applicable,50,10945,9073,46.7
+Barnet,Nursery,4,0,414,0
+Barnet,Primary,91,32139,29693,20.3
+Barnet,Secondary,25,27311,25854,23.3
+Bexley,All-through,1,1780,1538,42.0
+Bexley,Not applicable,16,2005,1714,49.5
+Bexley,Primary,60,25096,22044,19.9
+Bexley,Secondary,15,20706,18453,20.5
+Brent,All-through,2,3630,3569,31.5
+Brent,Not applicable,23,4195,2847,49.7
+Brent,Nursery,4,0,309,22.2
+Brent,Primary,60,29494,25924,25.1
+Brent,Secondary,14,19587,17967,28.8
+Bromley,16 plus,1,0,0,0
+Bromley,Not applicable,24,6735,5852,51.1
+Bromley,Primary,76,30228,27160,16.2
+Bromley,Secondary,19,24257,24532,20.7
+Camden,16 plus,4,0,0,0
+Camden,Not applicable,50,12719,9605,59.9
+Camden,Nursery,1,0,116,43.8
+Camden,Primary,38,11486,9997,44.1
+Camden,Secondary,10,11040,9976,48.8
+City of London,Not applicable,8,3525,2751,0
+City of London,Primary,1,245,249,23.3
+Croydon,16 plus,2,230,259,0
+Croydon,Not applicable,39,11874,9516,51.5
+Croydon,Nursery,5,0,424,0
+Croydon,Primary,87,38643,31553,28.1
+Croydon,Secondary,23,26469,21950,38.3
+Ealing,All-through,1,1895,1672,41.3
+Ealing,Not applicable,29,5993,4956,47.6
+Ealing,Nursery,4,0,474,0
+Ealing,Primary,65,33132,29609,28.4
+Ealing,Secondary,16,23233,21801,32.2
+Enfield,16 plus,1,0,0,0
+Enfield,All-through,3,5545,5117,49.1
+Enfield,Not applicable,18,3074,2867,61.5
+Enfield,Primary,68,33960,27766,33.1
+Enfield,Secondary,18,22759,19623,35.0
+Greenwich,16 plus,1,1500,0,0
+Greenwich,All-through,1,1860,1667,44.4
+Greenwich,Not applicable,23,4952,4461,54.4
+Greenwich,Nursery,4,0,582,9.3
+Greenwich,Primary,62,26664,23579,32.0
+Greenwich,Secondary,15,18119,17390,31.7
+Hackney,Not applicable,36,14490,10885,67.0
+Hackney,Nursery,2,0,192,21.3
+Hackney,Primary,50,19471,16703,42.0
+Hackney,Secondary,16,15916,14429,47.8
+Hammersmith and Fulham,16 plus,2,900,801,100.0
+Hammersmith and Fulham,Not applicable,29,8196,6965,57.0
+Hammersmith and Fulham,Nursery,4,0,306,18.1
+Hammersmith and Fulham,Primary,36,11347,8924,33.8
+Hammersmith and Fulham,Secondary,11,9586,9131,31.9
+Haringey,16 plus,2,2050,784,0
+Haringey,All-through,1,1570,1320,32.4
+Haringey,Not applicable,21,4878,4444,47.9
+Haringey,Nursery,3,0,392,0
+Haringey,Primary,60,22169,19754,24.5
+Haringey,Secondary,11,13440,13879,30.9
+Harrow,16 plus,2,0,0,0
+Harrow,All-through,1,1582,1443,31.2
+Harrow,Not applicable,19,5712,4484,42.5
+Harrow,Nursery,1,0,80,0
+Harrow,Primary,40,23474,21625,15.8
+Harrow,Secondary,12,15850,15149,24.2
+Havering,16 plus,1,400,240,0
+Havering,Not applicable,14,1729,1191,46.6
+Havering,Primary,59,26364,24796,18.6
+Havering,Secondary,18,17944,17554,23.7
+Hillingdon,16 plus,1,0,0,0
+Hillingdon,All-through,1,1500,1580,16.3
+Hillingdon,Not applicable,24,5796,5183,45.4
+Hillingdon,Nursery,1,0,174,0
+Hillingdon,Primary,66,31705,27747,21.7
+Hillingdon,Secondary,21,23934,21263,27.2
+Hounslow,16 plus,1,0,0,0
+Hounslow,All-through,3,3880,2522,27.6
+Hounslow,Not applicable,18,4314,3456,50.2
+Hounslow,Primary,49,23808,22335,22.6
+Hounslow,Secondary,18,20386,19275,29.7
+Islington,16 plus,1,1000,863,0
+Islington,All-through,1,1360,1554,36.3
+Islington,Not applicable,18,1773,1622,67.9
+Islington,Nursery,3,0,280,14.6
+Islington,Primary,40,14879,12733,46.8
+Islington,Secondary,9,8435,5885,55.8
+Kensington and Chelsea,16 plus,1,0,0,0
+Kensington and Chelsea,Not applicable,39,14270,11172,62.5
+Kensington and Chelsea,Nursery,3,0,204,36.5
+Kensington and Chelsea,Primary,26,7952,6195,35.3
+Kensington and Chelsea,Secondary,6,6039,6097,39.8
+Kingston upon Thames,16 plus,1,0,0,0
+Kingston upon Thames,Not applicable,17,5211,4859,38.4
+Kingston upon Thames,Nursery,1,0,130,6.8
+Kingston upon Thames,Primary,35,14251,12527,16.1
+Kingston upon Thames,Secondary,11,12342,12825,15.6
+Lambeth,16 plus,6,1340,833,0
+Lambeth,All-through,2,3609,3410,31.1
+Lambeth,Not applicable,17,4083,2967,64.3
+Lambeth,Nursery,5,0,372,22.9
+Lambeth,Primary,58,22157,17982,39.9
+Lambeth,Secondary,14,13310,11341,48.2
+Lewisham,16 plus,1,0,0,0
+Lewisham,All-through,4,4820,4191,32.2
+Lewisham,Not applicable,17,3223,3251,56.1
+Lewisham,Nursery,2,0,221,5.9
+Lewisham,Primary,64,25648,22075,27.6
+Lewisham,Secondary,10,11906,10187,35.9
+Merton,Not applicable,22,6330,5210,47.1
+Merton,Primary,43,19348,15586,26.9
+Merton,Secondary,9,11775,9624,34.5
+Newham,16 plus,3,1450,1182,0
+Newham,All-through,4,6970,6291,45.8
+Newham,Not applicable,16,2607,1584,55.2
+Newham,Nursery,7,0,1105,0
+Newham,Primary,67,37123,32724,35.2
+Newham,Secondary,17,22150,19625,48.1
+Redbridge,All-through,4,8290,7865,21.2
+Redbridge,Not applicable,24,4702,3784,50.3
+Redbridge,Primary,52,30563,28109,18.4
+Redbridge,Secondary,15,21553,20809,23.4
+Richmond upon Thames,16 plus,1,0,0,0
+Richmond upon Thames,Not applicable,28,12647,10916,38.8
+Richmond upon Thames,Nursery,1,0,89,0
+Richmond upon Thames,Primary,45,18229,16011,14.4
+Richmond upon Thames,Secondary,11,11278,12487,18.5
+Southwark,All-through,1,1645,1275,63.9
+Southwark,Not applicable,31,7616,7039,66.6
+Southwark,Nursery,4,0,402,26.3
+Southwark,Primary,66,24288,19802,40.6
+Southwark,Secondary,19,19535,18425,44.3
+Sutton,Not applicable,16,3413,2213,50.6
+Sutton,Nursery,2,0,142,0
+Sutton,Primary,41,19290,17256,18.1
+Sutton,Secondary,15,20682,21636,16.3
+Tower Hamlets,16 plus,3,300,275,0
+Tower Hamlets,All-through,1,1620,1884,48.9
+Tower Hamlets,Not applicable,25,3972,3199,63.4
+Tower Hamlets,Nursery,3,0,236,11.2
+Tower Hamlets,Primary,66,26779,23491,40.2
+Tower Hamlets,Secondary,17,19396,17343,45.2
+Waltham Forest,16 plus,4,500,0,0
+Waltham Forest,All-through,2,2235,2158,37.5
+Waltham Forest,Not applicable,13,3328,3064,53.6
+Waltham Forest,Nursery,3,0,264,0
+Waltham Forest,Primary,51,26689,23992,23.5
+Waltham Forest,Secondary,15,15761,14563,32.2
+Wandsworth,16 plus,1,0,0,0
+Wandsworth,Not applicable,41,12702,10749,59.9
+Wandsworth,Nursery,3,0,119,15.7
+Wandsworth,Primary,58,22723,17396,31.8
+Wandsworth,Secondary,11,14560,12852,37.7
+Westminster,16 plus,3,600,619,0
+Westminster,All-through,1,1300,1307,62.1
+Westminster,Not applicable,41,12537,9665,63.9
+Westminster,Nursery,4,0,265,26.6
+Westminster,Primary,33,9857,7164,37.2
+Westminster,Secondary,10,11442,10646,45.1

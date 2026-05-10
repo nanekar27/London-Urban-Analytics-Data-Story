@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Urban Analytics Data Story
+The Urban Survival Guide : Decoding London’s Quality Of Life</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>London Urban Analytics Data Story
+The Urban Survival Guide : Decoding London’s Quality Of Life</h1>
+            <p class="subtitle">Interactive exploration of Crime, Housing &amp; Education across 33 London Boroughs (2025)</p>
+            <div id="active-filter" aria-live="polite">
+                <span id="filter-label">Showing: All London</span>
+                <button id="btn-reset" style="display:none;" onclick="window.clearFilter()" aria-label="Clear all filters">Clear All</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="kpi-strip" aria-label="Key performance indicators">
+        <div class="kpi" id="kpi-crime">
+            <span class="kpi-icon" aria-hidden="true">&#x1F6A8;</span>
+            <div><p class="kpi-val" id="kpi-crime-val" aria-label="Total crimes">&mdash;</p><p class="kpi-label">Total Crimes</p></div>
+        </div>
+        <div class="kpi" id="kpi-price">
+            <span class="kpi-icon" aria-hidden="true">&#x1F3E0;</span>
+            <div><p class="kpi-val" id="kpi-price-val" aria-label="Average property price">&mdash;</p><p class="kpi-label">Avg. Property Price</p></div>
+        </div>
+        <div class="kpi" id="kpi-schools">
+            <span class="kpi-icon" aria-hidden="true">&#x1F393;</span>
+            <div><p class="kpi-val" id="kpi-schools-val" aria-label="Total school places">&mdash;</p><p class="kpi-label">School Places</p></div>
+        </div>
+        <div class="kpi" id="kpi-fsm">
+            <span class="kpi-icon" aria-hidden="true">&#x1F4CA;</span>
+            <div><p class="kpi-val" id="kpi-fsm-val" aria-label="Average free school meals percentage">&mdash;</p><p class="kpi-label">Avg. FSM %</p></div>
+        </div>
+    </section>
+
+    <section class="story-intro" aria-label="Introduction">
+        <div class="story-intro-inner">
+            <div class="story-intro-accent"></div>
+            <h2 class="story-intro-title">The Story of London's 33 Boroughs</h2>
+            <p>London is not one city — it is 33 distinct boroughs, each shaped by a unique combination of crime, property prices, and education. This dashboard explores how these three forces interact across the capital.</p>
+            <div class="story-actions">
+                <div class="action-card">
+                    <span class="action-dot" style="background:var(--magenta);"></span>
+                    <div>
+                        <h4>Click</h4>
+                        <p>Any borough in any chart to filter the entire dashboard</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="action-dot" style="background:var(--cyan);"></span>
+                    <div>
+                        <h4>Switch</h4>
+                        <p>Between Crime, Housing, and Schools in the Explorer</p>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <span class="action-dot" style="background:var(--amber);"></span>
+                    <div>
+                        <h4>Hover</h4>
+                        <p>To compare boroughs across every chart simultaneously</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-about" aria-label="Data processing explanation">
+        <div class="data-about-inner">
+            <div class="data-about-accent"></div>
+            <h2 class="data-about-title">About the Data</h2>
+            <p class="data-about-intro">Three UK government open datasets were cleaned and filtered to London using a Python pipeline (<code>clean_data.py</code>). All borough names were normalised to a canonical list of 33 to ensure cross-dataset alignment.</p>
+            <div class="data-cards">
+                <div class="data-card data-crime">
+                    <div class="data-card-bar"></div>
+                    <h4>UK Police Crime Data</h4>
+                    <p class="data-card-source">data.police.uk</p>
+                    <div class="data-card-stats">
+                        <div><span>1,231,481</span> raw rows</div>
+                        <div><span>1,225,272</span> London kept</div>
+                        <div><span>13</span> months</div>
+                    </div>
+                    <p class="data-card-method">Filtered to 33 London boroughs by extracting borough names from LSOA codes using regex pattern matching</p>
+                </div>
+                <div class="data-card data-housing">
+                    <div class="data-card-bar"></div>
+                    <h4>HM Land Registry Prices</h4>
+                    <p class="data-card-source">gov.uk price paid data</p>
+                    <div class="data-card-stats">
+                        <div><span>681,054</span> raw rows</div>
+                        <div><span>73,036</span> London kept</div>
+                        <div><span>5</span> property types</div>
+                    </div>
+                    <p class="data-card-method">Filtered by county = "Greater London", property type codes mapped to readable names</p>
+                </div>
+                <div class="data-card data-schools">
+                    <div class="data-card-bar"></div>
+                    <h4>DfE Edubase Schools</h4>
+                    <p class="data-card-source">get-information-schools.service.gov.uk</p>
+                    <div class="data-card-stats">
+                        <div><span>52,235</span> raw rows</div>
+                        <div><span>3,195</span> London kept</div>
+                        <div><span>6</span> phases</div>
+                    </div>
+                    <p class="data-card-method">Filtered by region = "London" and status = "Open", Latin-1 encoding handled</p>
+                </div>
+            </div>
+            <p class="data-note">The dashboard loads pre-aggregated summary CSVs for browser performance. Full detail datasets are available for EDA.</p>
+        </div>
+    </section>
+
+    <main class="dashboard">
+
+        <section class="row row-top">
+            <article class="panel panel-overview" aria-label="Borough explorer chart">
+                <h2>Borough Explorer <span class="hint">Switch category, Click bar to filter, Ranked list on right</span></h2>
+                <div id="overview-container" role="img" aria-label="Grouped bar chart showing boroughs ranked by selected category"></div>
+            </article>
+            <article class="panel panel-bubble" aria-label="Bubble scatter chart">
+                <h2>Price vs Crime vs Schools <span class="hint">Click bubble to filter, Size = school places</span></h2>
+                <div id="bubble-container" role="img" aria-label="Bubble chart showing property price versus crime with school capacity as bubble size"></div>
+            </article>
+        </section>
+
+        <div class="story-divider" aria-label="Insight about crime patterns">
+            <span class="story-number">01</span>
+            <div>
+                <h3>Where does crime concentrate?</h3>
+                <p>Westminster, Newham, and Southwark consistently top the crime charts, driven by high footfall and population density. Violence and anti-social behaviour dominate across all boroughs, but inner London sees more theft while outer boroughs report more vehicle crime and burglary.</p>
+            </div>
+        </div>
+
+        <section class="row">
+            <article class="panel" aria-label="Monthly crime trend line chart">
+                <h2>Monthly Crime Trend <span class="hint">Click a dot to filter by month</span></h2>
+                <div id="line-container" role="img" aria-label="Line chart showing monthly crime count over 13 months"></div>
+            </article>
+            <article class="panel" aria-label="Crime type donut chart">
+                <h2>Crime Type Breakdown <span class="hint">Click a slice to filter by crime type</span></h2>
+                <div id="donut-container" role="img" aria-label="Donut chart showing proportional breakdown of 14 crime types"></div>
+            </article>
+        </section>
+
+        <div class="story-divider" aria-label="Insight about housing and safety">
+            <span class="story-number">02</span>
+            <div>
+                <h3>The price of safety</h3>
+                <p>The bubble chart reveals that expensive boroughs like Kensington, Westminster, and Camden also have high crime. The truly safe and affordable boroughs sit in outer London: Sutton, Bexley, and Havering. High price does not guarantee low crime.</p>
+            </div>
+        </div>
+
+        <section class="row">
+            <article class="panel" aria-label="Housing prices vertical bar chart">
+                <h2>Housing Prices by Borough <span class="hint">Click bar to filter, Hover to highlight</span></h2>
+                <div id="housing-container" role="img" aria-label="Vertical bar chart showing average flat prices per borough"></div>
+            </article>
+            <article class="panel" aria-label="School capacity stacked bar chart">
+                <h2>School Capacity by Phase <span class="hint">Click bar to filter, Hover to highlight</span></h2>
+                <div id="schools-container" role="img" aria-label="Vertical stacked bar chart showing school capacity by education phase"></div>
+            </article>
+        </section>
+
+        <div class="story-divider" aria-label="Insight about education inequality">
+            <span class="story-number">03</span>
+            <div>
+                <h3>Education under pressure</h3>
+                <p>Tower Hamlets, Hackney, and Newham have Free School Meals rates above 30%, meaning more pupils from low-income families. These same boroughs face the highest crime and lower house prices, creating a cycle where disadvantage concentrates across all three dimensions.</p>
+            </div>
+        </div>
+
+        <section class="row">
+            <article class="panel panel-wide" aria-label="Crime intensity heatmap">
+                <h2>Crime Intensity Heatmap <span class="hint">Click cell to filter, Responds to all filters</span></h2>
+                <div id="heatmap-container" role="img" aria-label="Heatmap grid showing crime intensity by borough and month"></div>
+            </article>
+        </section>
+
+    </main>
+
+    <section class="conclusion" aria-label="Conclusion">
+        <div class="conclusion-inner">
+            <h2 class="conclusion-title">Conclusion: Three Londons</h2>
+            <p class="conclusion-intro">Our analysis of 1.2 million crime records, 73,000 property sales, and 3,195 schools reveals that London is not one city but three distinct realities operating within the same boundary.</p>
+            <div class="three-londons">
+                <div class="london-card london-affluent">
+                    <div class="card-accent"></div>
+                    <h3>Inner Affluent</h3>
+                    <p class="card-boroughs">Westminster, Kensington, Camden</p>
+                    <p>Highest property prices in the country. Despite the wealth, crime rates are high driven by density, tourism, and nightlife rather than deprivation. Schools are well-resourced with low FSM rates.</p>
+                </div>
+                <div class="london-card london-deprived">
+                    <div class="card-accent"></div>
+                    <h3>Inner Deprived</h3>
+                    <p class="card-boroughs">Newham, Tower Hamlets, Hackney</p>
+                    <p>The triple challenge: high crime, lower property values, and schools under pressure with FSM rates above 30%. Disadvantage concentrates across all three dimensions, creating a cycle that is difficult to break.</p>
+                </div>
+                <div class="london-card london-suburban">
+                    <div class="card-accent"></div>
+                    <h3>Outer Suburban</h3>
+                    <p class="card-boroughs">Bromley, Sutton, Havering, Bexley</p>
+                    <p>Lowest crime rates, most school capacity per resident, and moderate property prices. These boroughs represent a different model of urban living, safer and better schooled but further from economic centres.</p>
+                </div>
+            </div>
+            <div class="conclusion-finding">
+                <h3>Key Finding</h3>
+                <p>Crime, housing, and education are not independent variables. They form an interconnected system where deprivation in one domain reinforces disadvantage in the others. Effective policy requires coordinated intervention across all three, not siloed approaches that address each in isolation.</p>
+            </div>
+            <div class="conclusion-stats">
+                <div class="stat-pill"><span>1,225,272</span> crimes analysed</div>
+                <div class="stat-pill"><span>73,036</span> property sales</div>
+                <div class="stat-pill"><span>3,195</span> schools mapped</div>
+                <div class="stat-pill"><span>33</span> boroughs compared</div>
+                <div class="stat-pill"><span>13</span> months covered</div>
+                <div class="stat-pill"><span>16</span> data attributes</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Data Sources: UK Police Open Data (2024-2025), HM Land Registry Price Paid (2025), DfE Edubase School Records (2026)</p>
+        <p>All datasets used under UK Open Government Licence v3.0</p>
+        <p>F21DV Group Project - Heriot-Watt University - F21DV Group 11 Edinburgh</p>
+    </footer>
+
+    <div id="tooltip" class="tooltip" role="tooltip"></div>
+
+    <script src="js/chart_overview.js"></script>
+    <script src="js/chart_bubble.js"></script>
+    <script src="js/chart_line.js"></script>
+    <script src="js/chart_donut.js"></script>
+    <script src="js/chart_housing.js"></script>
+    <script src="js/chart_schools.js"></script>
+    <script src="js/chart_heatmap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
